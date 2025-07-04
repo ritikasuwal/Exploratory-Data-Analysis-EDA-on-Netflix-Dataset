@@ -1,52 +1,42 @@
 # 📊 Exploratory Data Analysis (EDA) on Netflix Dataset
 
-Welcome to the **Netflix EDA Project**! This project aims to explore and analyze the Netflix Movies and TV Shows dataset using Python. The goal is to extract meaningful insights, detect trends, and visualize patterns in the content available on Netflix.
+Welcome to the **Netflix EDA Project**! 
+This project uses two datasets to explore and analyze the movies and TV shows available on Netflix. Using powerful data visualization and sentiment analysis tools, it uncovers trends, patterns, and content insights.
 
-## 📁 Project Structure
-
----
-
-
---
 ## 🎯 Objectives
 
-- Clean and preprocess raw Netflix datasets
-- Handle missing values and convert formats
-- Perform comprehensive exploratory data analysis
-- Create visualizations to uncover trends and patterns
-- Gain insights into content types, ratings, genres, and more
+- Perform data cleaning and preprocessing on both datasets
+- Conduct exploratory data analysis (EDA) using Python
+- Visualize key insights with Plotly and Seaborn
+- Analyze content trends across genres, ratings, years, and countries
+- Apply sentiment analysis to descriptions using TextBlob
 
 ---
+## 🧰 Technologies Used
 
-## 🧹 Data Cleaning & Preprocessing
+| Tool / Library | Purpose                     |
+|----------------|-----------------------------|
+| `Python`       | Main programming language   |
+| `pandas`       | Data manipulation           |
+| `numpy`        | Numerical operations        |
+| `matplotlib` & `seaborn` | Data visualization |
+| `plotly.express` | Interactive visualizations |
+| `textblob`     | Sentiment analysis          |
+| `Jupyter Notebook` | Development environment  |
 
+---
 ### ✅ Tasks performed:
-- Handled missing data in `director`, `cast`, `country`, `rating`, and `date_added`
-- Converted `date_added` to datetime format
-- Extracted `year_added`, `month_added` from `date_added`
-- Separated `duration` column:
-  - For Movies: extracted minutes
-  - For TV Shows: extracted number of seasons
-- Split `listed_in` into genres
-- Removed duplicates and standardized column names
-- Engineered new features like:
-  - `is_movie` (Movie or TV Show)
-  - `num_cast_members`
-  - `num_genres`
-  - `content_age` = Current Year − Release Year
 
----
 
-## 📊 Exploratory Data Analysis (EDA)
+## 📊 EDA Highlights
 
-### Key EDA Areas:
-- **Distribution of content types**: Movies vs TV Shows
-- **Content added over the years** (time trends)
-- **Most frequent genres**
-- **Top producing countries**
-- **Most common ratings (TV-MA, PG, etc.)**
-- **Top directors and actors**
-- **Duration analysis** (longest/shortest content)
+✔️ Distribution of Movies vs TV Shows  
+✔️ Most common ratings (TV-MA, PG, R, etc.)  
+✔️ Content released by year and added by year  
+✔️ Top genres and multi-genre breakdown  
+✔️ Country-wise content trends  
+✔️ Top 5 directors with the most content  
+✔️ Duration insights (Movie runtime & TV seasons)
 
 ---
 
@@ -62,23 +52,28 @@ Used `matplotlib`, `seaborn`, and `wordcloud` to create:
 - Time series plot of content addition trends
 
 ---
+## 💬 Sentiment Analysis
 
-## 🧰 Technologies Used
+Used the `description` column from the dataset to perform sentiment analysis using **TextBlob**.
 
-- **Python**
-- **Jupyter Notebook**
-- **pandas** – for data manipulation
-- **numpy** – for numeric operations
-- **matplotlib** & **seaborn** – for visualization
-- **wordcloud** – for genre analysis
+- **Polarity** scores from `-1` (negative) to `+1` (positive)
+- Each show/movie classified as:
+  - `Positive`
+  - `Neutral`
+  - `Negative`
+
+**Sentiment Insights Visualized By:**
+- Content type (Movie vs TV)
+- Release year
+- Genre
 
 ---
 
-## 🚀 How to Run the Project
+
+## 🚀 How to Run This Project
 
 1. **Clone the repository**
 ```bash
 git clone https://github.com/ritikasuwal/Exploratory-Data-Analysis-EDA-on-Netflix-Dataset.git
 cd Exploratory-Data-Analysis-EDA-on-Netflix-Dataset
-
 
