@@ -27,6 +27,17 @@ This project uses two datasets to explore and analyze the movies and TV shows av
 ---
 ### ✅ Tasks performed:
 
+- Cleaned null values and handled missing data  
+- Separated multiple values in columns like *genre*, *country*, and *cast*  
+- Extracted release year and calculated additional time-based insights  
+- Counted and compared Movie vs TV Shows  
+- Explored ratings distribution and genre popularity  
+- Analyzed country-wise production trends  
+- Identified top directors by content volume  
+- Analyzed movie durations and TV show seasons  
+- Created interactive plots with Plotly  
+- Applied sentiment analysis on content descriptions using TextBlob  
+- Visualized polarity and sentiment trends over time and across genres  
 
 ## 📊 EDA Highlights
 
@@ -45,9 +56,7 @@ This project uses two datasets to explore and analyze the movies and TV shows av
 Used `matplotlib`, `seaborn`, and `wordcloud` to create:
 
 - Bar plots of content by type, year, country, rating
-- Heatmaps for correlation and density
 - Histograms of movie durations
-- Word cloud of genres
 - Boxplots for comparative duration analysis
 - Time series plot of content addition trends
 
